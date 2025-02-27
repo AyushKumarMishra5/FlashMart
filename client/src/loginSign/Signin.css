@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    cursor: pointer;
+}
+
+.signin-logo {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.signin-logo h2 {
+    font-family: "Poppins", "serif";
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px;
+    font-style: normal;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 300px;
+    height: 450px;
+    box-shadow: 3px 3px 6px rgb(169, 169, 169);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, button {
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", "serif";
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 20px;
+    box-shadow: 2px 2px 4px lightgray;
+    margin: 8px;
+    font-size: 15px;
+}
+
+.signin-form input:hover {
+    border: 3px solid black;
+    transition: 0.2s ease-in;
+    width: 217px;
+}
+
+form button {
+    width: 240px;
+}
+
+form button:hover {
+    border: 3px solid green;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+    background-color: lightgreen;
+    color: black;
+}
+
+button {
+    width: 240px;
+}
+
+button:hover {
+    border: 3px solid green;
+    background-color: lightgreen;
+    color: black;
+    font-weight: bold;
+    transform: 0.2s ease-in;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button a:hover {
+    font-weight: bold;
+    color: black;
+}

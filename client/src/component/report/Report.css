@@ -1,0 +1,15 @@
+.success-message {
+    background: #e0f7e9;
+    color: #2e7d32;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.report-container p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+}

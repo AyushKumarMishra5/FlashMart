@@ -1,0 +1,97 @@
+.payment-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.option span {
+  font-size: 16px;
+}
+
+.active {
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.disabled {
+  background: #ddd;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pay-button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pay-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.delivery-options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option input {
+  accent-color: #2575fc;
+}
+
+.option.active {
+  background-color: #2575fc;
+  color: white;
+}
+
+.option span {
+  font-size: 16px;
+}

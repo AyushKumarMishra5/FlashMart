@@ -1,0 +1,10 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.box img{
+    margin-left: 10px;
+}

@@ -1,0 +1,72 @@
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    border: 1px solid black;
+    background-color: rgb(6, 6, 11);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+
+.sidebar h1{
+    color: white;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    padding: 5px 25px;
+}
+
+h1 i{
+    margin-right: 10px;
+}
+
+.first, .second{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: -20px;
+    margin-top: auto;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+.first li, .second li{
+    list-style: none;
+}
+
+.first li a, .second li a, .third{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 350;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -15px;
+}
+
+.first li:hover a, .second li:hover a{
+    width: 90px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: white;
+    color: rgb(6, 6, 11);
+    transition: 0.25s ease-in;
+}
+
+.first li i, .second li i, .third li i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+

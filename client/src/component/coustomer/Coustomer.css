@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-left: 35px;
+    margin-top: 20px;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.box{
+    width: 210px;
+    height: 210px;
+    box-shadow: 3px 3px 6px lightgray;
+    margin: 2px;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    transition: 0.75s 1 ease-in-out;
+    box-shadow: 4px 4px 8px rgb(234, 229, 229);
+}
+
+.box img{
+    margin-left: 45px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: color-burn;
+}
+
+.box h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
