@@ -159,3 +159,131 @@
     opacity: 1;
     margin-right: 40px;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product {
+        gap: 15px;
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    .pro {
+        width: 200px;
+        padding: 12px;
+    }
+
+    .pro img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .pro .btn button {
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+
+    .overlay {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar h2 {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .input {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .profile h3 {
+        font-size: 16px;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .product {
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+    .pro {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .pro img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .pro .btn button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .overlay {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+@media (max-width: 350px) {
+    .navbar h2 {
+        font-size: 18px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .profile h3 {
+        font-size: 14px;
+    }
+
+    .profile img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .product {
+        gap: 8px;
+        margin-left: 5px;
+    }
+
+    .pro {
+        width: 160px;
+        padding: 8px;
+    }
+
+    .pro img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .pro .btn button {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .overlay {
+        font-size: 10px;
+        padding: 5px;
+    }
+}

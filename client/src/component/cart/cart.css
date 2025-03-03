@@ -1,67 +1,91 @@
-.cart h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.cart {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cart h2 {
+    text-align: center;
     font-size: 28px;
     font-weight: 600;
     animation: move 6s ease-in;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@keyframes move{
-    0%{
-        transform: translatey(-30px);
+@keyframes move {
+    0% {
+        transform: translateY(-30px);
         opacity: 0;
     }
-    10%{
-        transform: translatey(-20px);
-        opacity: 0.2;
-    }
-    20%{
-        transform: translatey(-10px);
-        opacity: 0.4;
-    }
-    30%{
-        transform: translatey(40px);
-        opacity: 0.6;
-    }
-    40%{
-        transform: translatey(0px);
+
+    40% {
+        transform: translateY(0px);
         opacity: 1;
     }
-    50%{
-        transform: translatey(30px);
+
+    50% {
+        transform: translateY(30px);
         opacity: 0.8;
     }
-    60%{
-        transform: translatey(0px);
-        opacity: 1;
-    }
-    70%{
-        transform: translatey(20px);
-        opacity: 0.8;
-    }
-    80%{
-        transform: translatey(0px);
-        opacity: 1;
-    }
-    100%{
-        transform: translatey(10px);
-        opacity: 0.8;
-    }
-    100%{
-        transform: translatey(0px);
+
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
-.order{
+
+.cart-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.del {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.del:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.order {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: sticky;
+    flex-wrap: wrap;
 }
 
-.order button{
+.order button {
     width: 200px;
     height: 40px;
     border-radius: 5px;
@@ -74,105 +98,21 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-.order button:hover{
-    background-color: black;
-    color: white;
+.order button:hover {
+    background-color: black !important;
+    color: white !important;
     border: none !important;
-
 }
 
-.cart p{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 450;
-    margin-top: 10px;
-}
-
-.cart-item{
-    display: flex;
-    gap: 12px;
-    box-shadow: 2px 2px 4px lightgray;
-    margin-bottom: 20px;
-    position: relative;
-    height: 280px;
-}
-
-.cart-item:hover{
-    transform: scale(0.98);
-    transition: 0.75s ease-in-out;
-    box-shadow: 4px 4px 6px lightgray;
-}
-
-.info h3{
-    font-size: 24px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-
-}
-
-.info h4{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 500;
-    margin-top: -2px;
-}
-
-.info h5{
-    font-size: 18px;
-    font-weight: 450;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: -20px;
-}
-
-.other h5{
-    color: green;
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 450;
-    margin-top: -15px;
-}
-
-.other h4{
-    color: black;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    margin-top: -15px;
-}
-
-.other label, input{
-    font-weight: 450;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.cart-item img{
-    margin-top: 40px;
-    width: 180px;
-    height: 180px;
-}
-
-.del{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.del:hover{
-    transform: scale(1.3);
-    transition: 4s ease-in;
-}
-
-.quant{
+.quant {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.quant button{
-    width: 25px;
-    height: 25px;
+.quant button {
+    width: 30px;
+    height: 30px;
     font-size: 16px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -181,15 +121,104 @@
     padding-right: 25px;
 }
 
-.quant button:hover{
+.quant button:hover {
     background-color: black !important;
     color: white !important;
     border: none !important;
 }
 
-.quant h1{
+.quant h1 {
     font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    margin-top: 10px
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .cart h2 {
+        font-size: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-item img {
+        width: 100px;
+    }
+
+    .order {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-item img {
+        width: 90px;
+    }
+
+    .quant {
+        gap: 5px;
+    }
+
+    .quant button {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .del {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cart {
+        width: 95%;
+    }
+
+    .cart-item {
+        padding: 5px;
+    }
+
+    .quant button {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cart h2 {
+        font-size: 18px;
+    }
+
+    .cart-item img {
+        width: 80px;
+    }
+
+    .order button {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 350px) {
+    .cart-item img {
+        width: 70px;
+    }
+
+    .quant button {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+
+    .order button {
+        max-width: 180px;
+    }
 }

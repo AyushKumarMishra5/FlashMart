@@ -59,12 +59,6 @@ export default function Sidebar() {
                 </Link>
                 </li>
             </ul>
-            <div className='third'>
-                <li>
-                    <i class="fa-solid fa-outdent"></i>
-                    Logout
-                </li>
-            </div>
         </div>
     )
 }

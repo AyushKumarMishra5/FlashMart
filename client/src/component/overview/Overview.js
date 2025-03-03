@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Overview.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useLocation } from 'react-router-dom';
 
 import pro1 from '../assets/pro1.png';
 import pro2 from '../assets/pro2.jpg';
@@ -49,6 +50,8 @@ import pro40 from '../assets/pro40.webp';
 export default function Overview({ addToCart }) {
   const [search, setSearch] = useState('');
 
+  const location = useLocation();
+  const username = location.state?.username|| "User";
 
   const products = [
     { id: 1, name: "Face Cream", description: "Hydrating face cream that nourishes and protects skin, leaving it soft, smooth, and radiant with daily use.", image: pro1, amount: 299 },
@@ -119,7 +122,7 @@ const handleAddToCart = (product) => {
         </div>
         <div className='profile'>
           <img src="https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg" alt="Profile" />
-          <h3>Welcome! User</h3>
+          <h3>Welcome {username}!</h3>
         </div>
       </div>
 
