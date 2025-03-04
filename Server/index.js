@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json())
 
 app.use(cors({
-    origin: ["http://localhost:3000", "https://splendid-concha-817ca9.netlify.app"],
+    origin: ["http://localhost:3000", "https://flashmart.netlify.app"],
     methods: ["POST", "GET"],
     credentials: true
 }))
@@ -47,8 +47,8 @@ app.post('/login', (req, res)=>{
 
 app.post('/user', (req, res)=>{
     userModel.create(req.body)
-    .then(User => res.json(User))
-    .catch(err => res.json(err))
+    .then(User => res.status(500).json(User))
+    .catch(err => res.status(500).json(err))
 })
 
 app.listen(PORT, (req, res)=>{
