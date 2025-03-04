@@ -47,8 +47,8 @@ app.post('/login', (req, res)=>{
 
 app.post('/user', (req, res)=>{
     userModel.create(req.body)
-    .then(User => res.status(500).json(User))
-    .catch(err => res.status(500).json(err))
+    .then(User => res.json(User))
+    .catch(err => res.json(err))
 })
 
 app.listen(PORT, (req, res)=>{
