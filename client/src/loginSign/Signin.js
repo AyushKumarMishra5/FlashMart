@@ -42,7 +42,7 @@ export default function Signin({ onSubmit }) {
         e.preventDefault();
         if (!validateForm()) return;
 
-        axios.post('http://localhost:3001/user', { username, password, email })
+        axios.post('https://flashmart.onrender.com/user', { username, password, email })
             .then(result => {
                 console.log(result);
                 alert("Success! You have created an account!");

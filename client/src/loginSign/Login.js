@@ -11,7 +11,7 @@ export default function Login({onLogin}) {
     const navigate = useNavigate();
     const handleLogin = (e) =>{
         e.preventDefault();
-        axios.post('http://localhost:3001/login', {username, password})
+        axios.post('https://flashmart.onrender.com/login', {username, password})
         .then(result => {console.log(result)
             if(result.data === "Success")
             {
