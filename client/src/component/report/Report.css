@@ -1,15 +1,69 @@
-.success-message {
-    background: #e0f7e9;
-    color: #2e7d32;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 10px;
+.report-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
 }
 
-.report-container p {
+.success-message {
+    color: #28a745;
     font-size: 16px;
-    margin: 5px 0;
-    text-align: center;
+    font-weight: bold;
+}
+
+.cancel button,
+.track-order button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.track-order button {
+    background: #007bff;
+}
+
+.cancel button:hover {
+    background: #cc0000 !important;
+    color: white !important;
+    font-weight: bold !important;
+    border: none !important;
+}
+
+.track-order button:hover {
+    background: #0056b3;
+}
+
+.status-log {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.status-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    margin: 6px 0;
+    background: #e9ecef;
+    border-radius: 6px;
+}
+
+.status-stage {
+    font-weight: bold;
+    color: #333;
+}
+
+.status-time {
+    font-size: 12px;
+    color: #555;
 }
