@@ -7,16 +7,16 @@ FlashMart is a fast, reliable e-commerce platform where users can shop a wide ra
     product listings, user authentication, and secure payment integration.
 
 # Features
-1 User Authentication: Secure login and signup using MERN authentication for real-time users.
-2 Product Management: Dynamic product listing handled within React.
-3 Responsive Design: Provides responsive design but is not yet fully ready for mobile apps.
-4 Shopping Cart: Add, remove, and update items in the cart.
-5 Order Processing: Checkout and order confirmation system.
-6 Admin Panel: Manage users, products, and orders.
-7 Dynamic Pagination: Efficient browsing through products.
-8 RESTful APIs: Backend APIs for all operations.
-9 Live Concern Form: A real-time form in the UI for users to share concerns instantly.
-10 Amazing Delivery modes and Live tracking Status
+1. User Authentication: Secure login and signup using MERN authentication for real-time users.
+2. Product Management: Dynamic product listing handled within React.
+3. Responsive Design: Provides responsive design but is not yet fully ready for mobile apps.
+4. Shopping Cart: Add, remove, and update items in the cart.
+5. Order Processing: Checkout and order confirmation system.
+6. Admin Panel: Manage users, products, and orders.
+7. Dynamic Pagination: Efficient browsing through products.
+8. RESTful APIs: Backend APIs for all operations.
+9. Live Concern Form: A real-time form in the UI for users to share concerns instantly.
+10. Amazing Delivery modes and Live tracking Status
 
 # Tech Stack
    Frontend: React.js, Redux, Bootstrap
