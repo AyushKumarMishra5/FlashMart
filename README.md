@@ -73,6 +73,10 @@ Ensure you have the following installed:
 ## Contributing
 Feel free to contribute! Fork the repository and submit a pull request.
 
+# Screenshots
+![image](https://github.com/user-attachments/assets/f081189b-4ab7-4260-ac3c-454c0f7da329)
+
+
 ## License
 This project is licensed under the MIT License.
 
