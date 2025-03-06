@@ -16,7 +16,7 @@ FlashMart is a fast, reliable e-commerce platform where users can shop a wide ra
 7. Dynamic Pagination: Efficient browsing through products.
 8. RESTful APIs: Backend APIs for all operations.
 9. Live Concern Form: A real-time form in the UI for users to share concerns instantly.
-10. Amazing Delivery modes and Live tracking Status
+ 10. Amazing Delivery modes and Live tracking Status
 
 # Tech Stack
    Frontend: React.js, Redux, Bootstrap
