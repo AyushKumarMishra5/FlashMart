@@ -42,7 +42,7 @@ Ensure you have the following installed:
     cd ../client
     npm install
 
-## 5. Setup Enironment Variables
+## 5. Setup Environment Variables
    ## Create .env file in your backend and add the following
     MONGO_URI=your_mongodb_connection_string
 
