@@ -70,9 +70,6 @@ Ensure you have the following installed:
 3. Backend: Render / Heroku
 4. Database: MongoDB Atlas
 
-## Contributing
-Feel free to contribute! Fork the repository and submit a pull request.
-
 # Screenshots
 ## Desktop view
 ### Dashboard
@@ -100,6 +97,9 @@ Feel free to contribute! Fork the repository and submit a pull request.
 5. Add the delivery address where you want your product to get delivered
 6. Select the payment mode and Delivery mod and click on conitnue button
 7. Finally the order has been places and now you have a live tracking where you can get the current status of your product.
+
+## Contributing
+Feel free to contribute! Fork the repository and submit a pull request.
    
 ## License
 This project is licensed under the MIT License.
