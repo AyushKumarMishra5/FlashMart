@@ -74,9 +74,31 @@ Ensure you have the following installed:
 Feel free to contribute! Fork the repository and submit a pull request.
 
 # Screenshots
-![image](https://github.com/user-attachments/assets/f081189b-4ab7-4260-ac3c-454c0f7da329)
+## Dexstop view
+### Dashboard
+![image](https://github.com/user-attachments/assets/b279e89d-c8f2-458d-a249-8e5f42e5276e)
+### Categories
+![image](https://github.com/user-attachments/assets/2c7b9b9c-e6ff-4ecb-8c39-c5eb5b73553f)
+### Cart Page
+![image](https://github.com/user-attachments/assets/02e284f6-9890-4643-a471-58ea89c96122)
+### Payment Page
+![image](https://github.com/user-attachments/assets/ea028e38-d002-4f92-b2a8-3becc3711a96)
+### Order confirmation page
+![image](https://github.com/user-attachments/assets/54a637b0-2272-498f-9a66-f52b6a603fd8)
 
+## Mobile View
+![WhatsApp Image 2025-03-06 at 19 23 36_616a6e62](https://github.com/user-attachments/assets/36442a65-3752-4115-a635-4cce560243f7)
+![WhatsApp Image 2025-03-06 at 19 24 20_0d5ae576](https://github.com/user-attachments/assets/ffba7567-7843-4c4f-954e-a1c9418ff17b)
 
+# How to use
+1. First get to the website and register your account
+2. Now log in your account filling the details
+3. Get into your shopping dashboard, browze products, get description by hovering on it and add to get in your cart
+4. Click on the checkout to conitnue further
+5. Add the delivery address where you want your product to get delivered
+6. Select the payment mode and Delivery mod and click on conitnue button
+7. Finally the order has been places and now you have a live tracking where you can get the current status of your product.
+   
 ## License
 This project is licensed under the MIT License.
 
