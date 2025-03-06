@@ -87,7 +87,9 @@ Feel free to contribute! Fork the repository and submit a pull request.
 ![image](https://github.com/user-attachments/assets/54a637b0-2272-498f-9a66-f52b6a603fd8)
 
 ## Mobile View
+### Mobile Dashboard View
 ![WhatsApp Image 2025-03-06 at 19 23 36_616a6e62](https://github.com/user-attachments/assets/36442a65-3752-4115-a635-4cce560243f7)
+### Mobile Cart View
 ![WhatsApp Image 2025-03-06 at 19 24 20_0d5ae576](https://github.com/user-attachments/assets/ffba7567-7843-4c4f-954e-a1c9418ff17b)
 
 # How to use
