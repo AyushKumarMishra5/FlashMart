@@ -19,12 +19,12 @@ FlashMart is a fast, reliable e-commerce platform where users can shop a wide ra
  10. Amazing Delivery modes and Live tracking Status
 
 # Tech Stack
-   Frontend: React.js, Redux, Bootstrap
-   Backend: Node.js, Express.js
-   Database: MongoDB with Mongoose
-   Authentication: JSON Web Tokens (JWT)
-   UI/UX: React Bootstrap for a clean and modern design
-   Deployment: Deployed using Vercel/Netlify (frontend) and Render/Heroku/Railway (backend)
+1. Frontend: React.js, Redux, Bootstrap
+2. Backend: Node.js, Express.js
+3. Database: MongoDB with Mongoose
+4. Authentication: JSON Web Tokens (JWT)
+5. UI/UX: React Bootstrap for a clean and modern design
+6. Deployment: Deployed using Vercel/Netlify (frontend) and Render/Heroku/Railway (backend)
 
 # Installation
 Prerequisites
@@ -65,16 +65,16 @@ Ensure you have the following installed:
 | GET    | /api/orders/:id     | Get order details             |
 
 # Deployment
-   To deploy the app, use services like:
-   Frontend: Vercel / Netlify
-   Backend: Render / Heroku
-   Database: MongoDB Atlas
+1. To deploy the app, use services like:
+2. Frontend: Vercel / Netlify
+3. Backend: Render / Heroku
+4. Database: MongoDB Atlas
 
 ## Contributing
 Feel free to contribute! Fork the repository and submit a pull request.
 
 # Screenshots
-## Dexstop view
+## Desktop view
 ### Dashboard
 ![image](https://github.com/user-attachments/assets/b279e89d-c8f2-458d-a249-8e5f42e5276e)
 ### Categories
