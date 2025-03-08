@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './Report.css';
 
 export default function Report() {
@@ -7,23 +7,7 @@ export default function Report() {
   const [timeStamp, setTimeStamp] = useState([]);
   const [isTracking, setIsTracking] = useState(false);
 
-  useEffect(() => {
-    const storedOrder = localStorage.getItem("orderDetails");
-    if (storedOrder) {
-      setOrderDetails(JSON.parse(storedOrder));
-      startTracking(); 
-    }
-  }, []);
-
-  const cancelOrder = () => {
-    localStorage.removeItem("orderDetails");
-    setOrderDetails(null);
-    setStatus("Order Cancelled");
-    setTimeStamp([]);
-    setIsTracking(false);
-  };
-
-  const startTracking = () => {
+  const startTracking = useCallback(() => {
     if (isTracking) return;
     setIsTracking(true);
 
@@ -32,10 +16,9 @@ export default function Report() {
       { stage: "Packed", time: 60000 },
       { stage: "Shipped", time: 60000 },
       { stage: "Out for Delivery", time: 60000 },
-      { stage: "Delivered", time: 360000 }
+      { stage: "Delivered", time: 600000 }
     ];
 
-    let localTimeStamp = [];
     let accumulatedTime = 0;
 
     statuses.forEach((statusObj, index) => {
@@ -59,6 +42,22 @@ export default function Report() {
         }
       }, accumulatedTime);
     });
+  }, [isTracking]);
+
+  useEffect(() => {
+    const storedOrder = localStorage.getItem("orderDetails");
+    if (storedOrder) {
+      setOrderDetails(JSON.parse(storedOrder));
+      startTracking();
+    }
+  }, [startTracking]);
+
+  const cancelOrder = () => {
+    localStorage.removeItem("orderDetails");
+    setOrderDetails(null);
+    setStatus("Order Cancelled");
+    setTimeStamp([]);
+    setIsTracking(false);
   };
 
   if (!orderDetails) {

@@ -1,15 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './cart.css';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useState, useEffect, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
+import "./cart.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Cart = ({ cart, setCart }) => {
   const navigate = useNavigate();
-  const [quantities, setQuantities] = useState(cart.map(() => 1));
+  const initialCart = useMemo(() => {
+    return JSON.parse(localStorage.getItem("cart")) || [];
+  }, []);
+
+  const [quantities, setQuantities] = useState(initialCart.map(() => 1));
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
+  useEffect(() => {
+    if (cart.length === 0) {
+      setCart(initialCart);
+    }
+  }, [cart.length, initialCart, setCart]);
+
+  useEffect(() => {
+    setQuantities(cart.map(() => 1));
   }, [cart]);
 
   const increase = (index) => {
@@ -17,6 +31,7 @@ const Cart = ({ cart, setCart }) => {
     newQuant[index] += 1;
     setQuantities(newQuant);
   };
+
   const decrease = (index) => {
     const newQuant = [...quantities];
     if (newQuant[index] > 1) {
@@ -24,13 +39,18 @@ const Cart = ({ cart, setCart }) => {
       setQuantities(newQuant);
     }
   };
+
   const totalAmount = () => {
-    return cart.reduce((total, item, index) => total + item.amount * quantities[index], 0);
+    return cart.reduce(
+      (total, item, index) => total + item.amount * quantities[index],
+      0
+    );
   };
+
   const handleRemoveCart = (item, index) => {
     const updatedCart = cart.filter((_, i) => i !== index);
     setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); 
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
     toast.success(`${item.name} deleted from cart!`, {
       position: "top-right",
       autoClose: 2000,
@@ -41,11 +61,12 @@ const Cart = ({ cart, setCart }) => {
       theme: "light",
     });
   };
+
   const handleCheckout = () => {
     if (cart.length === 0) {
       toast.error("Please add items to the cart before checking out.");
     } else {
-      navigate('/settings/address');
+      navigate("/settings/address");
     }
   };
 
@@ -67,7 +88,9 @@ const Cart = ({ cart, setCart }) => {
                 <div className="other">
                   <h5>In stock</h5>
                   <h4>Eligible for free shipping</h4>
-                  <label><input type="checkbox" name="gift" /> Is this item a gift?</label>
+                  <label>
+                    <input type="checkbox" name="gift" /> Is this item a gift?
+                  </label>
                 </div>
                 <div className="quant">
                   <button onClick={() => decrease(index)}>-</button>
@@ -77,14 +100,18 @@ const Cart = ({ cart, setCart }) => {
                 <h4>Rs {item.amount * quantities[index]}</h4>
               </div>
               <div className="del">
-                <i className="fa-solid fa-trash" onClick={() => handleRemoveCart(item, index)} style={{ color: "#000000" }}></i>
+                <i
+                  className="fa-solid fa-trash"
+                  onClick={() => handleRemoveCart(item, index)}
+                  style={{ color: "#000000" }}
+                ></i>
               </div>
             </div>
           ))
         )}
       </div>
       <div className="order">
-        <button onClick={() => navigate('/')}>Back to Products</button>
+        <button onClick={() => navigate("/")}>Back to Products</button>
         <button onClick={handleCheckout}>Checkout Rs {totalAmount()}</button>
       </div>
     </>
