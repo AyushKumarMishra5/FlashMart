@@ -71,7 +71,7 @@ export default function Report() {
         <p className="success-message">
           Order placed successfully! You ordered <strong>{orderDetails.items}</strong> item(s).
         </p>
-        <p><strong>Order ID:</strong> #{orderDetails.orderId}</p>
+        <p><strong>Order IDs:</strong> #{orderDetails.orderId}</p>
         <p><strong>Delivery Mode:</strong> {orderDetails.deliveryMode}</p>
         <p><strong>Date:</strong> {orderDetails.date}</p>
         <p><strong>Time:</strong> {orderDetails.time}</p>
